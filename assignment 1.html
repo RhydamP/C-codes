@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://127.0.0.1:5500/asssignment.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assingment</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        h1{
+            font: 75px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        div{
+            background-color: grey;
+            border: 1px solid black;
+            width:25%;
+            height:250px;
+            float: left;
+            
+        }
+        #chicken{
+            float: right;
+            background-color: rgb(255, 0, 200);
+            width: 170px;
+            height: 40px;
+        }
+        #beef{
+            float: right;
+            background-color: rgb(231, 50, 65);
+            width: 170px;
+            height: 40px;
+        }
+        #sushi{
+            float: right;
+
+            background-color: rgb(221, 228, 130);
+            width: 170px;
+            height: 40px;
+        }
+        .sushi{
+            text-align: center;
+            color: black;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 700;
+        }
+        .beef{
+            text-align: center;
+            color:white;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 700;
+        }
+        .p{
+           float: left;
+            
+        }
+        @media (min-width:992px){
+            .lg-3{
+                float:left;
+                border: 1px solid black;
+                margin-left: 20px;
+                width:31.3%;
+            }
+        }
+        @media (min-width:768px) and (max-width:991px){
+            .md-5,.md-11{
+                float:left;
+                border: 1px solid black;
+                margin-left: 35px;
+            }
+            .md-5{
+                margin-left: 45px;
+                margin-bottom: 20px;
+                width: 41%;
+            }
+            .md-11{
+                width: 91%;
+                height:75;
+                margin-bottom: 10px;
+            }
+        }
+        @media(max-width:767px){
+            .xs-11{
+                border: 1px solid black;
+                margin-bottom: 20px;
+                width: 91%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>our menu</h1>
+    <div class="lg-3 md-5 xs-11">
+        <div id="chicken" class="sushi">CHICKEN
+            
+        </div>
+        <p class="p">The Moon is a barren, rocky world without air and water. It has dark lava plain on its surface. The Moon is filled wit craters. It has no light of its own. It gets its light from the Sun. The Moo keeps changing its shape as it moves round the Earth. It spins on its axis in 27.3 days stars were named after the Edwin Aldrin were the first ones to set their foot on the Moon on 21 July 1969 They reached the Moon in their space craft named Apollo II</p>
+    </div>
+    <div class="lg-3 md-5 xs-11">
+        <div id="beef" class="beef">BEEF</div>
+        <p class="p">The Moon is a barren, rocky world without air and water. It has dark lava plain on its surface. The Moon is filled wit craters. It has no light of its own. It gets its light from the Sun. The Moo keeps changing its shape as it moves round the Earth. It spins on its axis in 27.3 days stars were named after the Edwin Aldrin were the first ones to set their foot on the Moon on 21 July 1969 They reached the Moon in their space craft named Apollo II</p>
+    </div>
+    <div class="lg-3 md-11 xs-11">
+        <div id="sushi" class="sushi">SUSHI</div>
+        <p class="p">The Moon is a barren, rocky world without air and water. It has dark lava plain on its surface. The Moon is filled wit craters. It has no light of its own. It gets its light from the Sun. The Moo keeps changing its shape as it moves round the Earth. It spins on its axis in 27.3 days stars were named after the Edwin Aldrin were the first ones to set their foot on the Moon on 21 July 1969 They reached the Moon in their space craft named Apollo II</p>
+    </div>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>
